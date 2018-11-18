@@ -28,3 +28,8 @@ $ delete src/main/resources/foo.txt
 > genresource2
 > assembly
 > check
+
+# delete the jar, then check it is recreated
+$ delete target/scala-2.11/foo.jar
+> assembly
+$ exists target/scala-2.11/foo.jar
